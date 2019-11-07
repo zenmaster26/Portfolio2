@@ -8,20 +8,53 @@
     }
     
     h1{
-        grid-column-start: 2;
+        
+        -webkit-animation: fadein 3s;
+        animation: fadein 3s;
+        
+        
+
+        
+    }
+    .headerpt2{
+        /*animation: fadein 5s;
+        -webkit-animation: fadein 5s;
+        animation-delay: 3s;*/
+        left: -1200px;
+        position: relative;
+        transform: translate(250)
+    }
+
+    .headerpt3{
+        /*animation: fadein 8s;
+        -webkit-animation: fadein 8s;
+        animation-delay: 7s;*/
+        position:relative;
+        left: -1200px;
+
+    }
+    header{
+        grid-column-start: 1;
         grid-column-end: 6;
         grid-row-start: 1;
         grid-row-end: 2;
         background-color: blanchedalmond;
         margin:0;
+        text-align: center;
     }
+    
+    @keyframes fadein{
+        from { opacity: 0;}
+        to {opacity: 1;}
+        
+    }
+
     .navicon{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        background-color: brown;
         margin:0;
+        text-align:center;
+        position:fixed;
+    
+        
         
     }
     body{
