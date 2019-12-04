@@ -209,7 +209,15 @@
         grid-row-start: 4;
         grid-row-end: 6;
         font-family: 'Chathura', sans-serif;
+        display:flex;
+        justify-content: space-between;
 
+    }
+    .portfolio img{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     footer{
         grid-column-start: 1;
@@ -221,5 +229,4 @@
         
 
     }
-}
 }
