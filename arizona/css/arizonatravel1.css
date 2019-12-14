@@ -1,0 +1,114 @@
+body{
+    min-width: 500px;
+    max-width: 1280px;
+    background-color:white;
+    margin-left:auto;
+    margin-right:auto;
+}
+html{
+    background-image:url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/monument-valley-red-rock-formations-arizona-landscape-gregory-ballos.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+.header{
+    text-align:center;
+    color: white;
+}
+h4{
+    text-align:center;
+    color:black;
+}
+.grid-container{
+    display:grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+    margin: 5px;
+}
+header{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: rgba(0, 0, 125, 0.8);
+    border: solid;
+    border-color:black;
+    margin-top: 5px;
+    
+}
+
+header img:first-of-type{
+    width: 150px;
+    height: 100px;
+    position:absolute;
+    top: 25px;
+    left:150px;
+    border: solid;
+    margin-left: 5px
+}
+nav{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: rgba(125, 0, 0, 0.8);
+    text-align:center;
+    padding: 10px;
+    border:solid;
+    justify-content:space-between;
+    display: flex;
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+nav a:hover{
+    color: yellow;
+}
+article{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    margin: 2px;
+    border-right: solid;
+}
+aside{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+footer{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: rgba(255, 200, 0, 0.6);
+    border:solid;
+    padding: 5px;
+    vertical-align: text-bottom;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    text-align: center;
+}
+aside img{
+    height: 200px;
+    width: 200px;
+    display:block;
+    float: right;
+    margin:10px;
+    border:solid;
+}
+
+.easter:active{
+    opacity: 1;
+}
+.easter2{
+    background-color:green;
+}
+.easter3{
+    opacity: 0;
+}
